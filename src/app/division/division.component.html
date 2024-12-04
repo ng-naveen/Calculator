@@ -1,0 +1,17 @@
+<div class="container-fluid bg-dark" style="height: 100vh;">
+    <div class="row align-items-center" style="height: 100%;">
+        <div class="col-4"></div>
+        <div class="col-4 p-4 border">
+            <div class="text-center">
+                <h3 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: aliceblue;">Division</h3>
+            </div>
+            <input type="text" placeholder="Enter a number" class="form-control" [(ngModel)]="num1">
+            <input type="text" placeholder="Enter another number" class="form-control my-2" [(ngModel)]="num2">
+            <div class="text-center">
+                <button (click)="performDivision()" class="btn btn-outline-light">Divide</button>
+            </div>
+            <h4 style="color: aliceblue;">Result: {{result}}</h4>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

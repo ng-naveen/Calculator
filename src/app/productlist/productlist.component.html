@@ -1,0 +1,16 @@
+<div class="container" style="height: 100vh;">
+    <div class="row" style="height: 100%;">
+        <div class="col-3" *ngFor="let product of products">
+            <div class="card">
+                <img src="{{product.image}}" class="card-img-top" alt="..." style="height: 300px; width: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <p class="card-text">{{product.description}}</p>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">{{product.price | currency: 'USD'}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

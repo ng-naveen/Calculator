@@ -1,0 +1,18 @@
+<div class="container-fluid bg-light" style="height: 100vh;">
+    <div class="row align-items-center" style="height: 100%;">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 p-4 border shadow-lg">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <label for="">Temp in celsius</label>
+                    <input type="text" class="form-control" [(ngModel)]="tempInC" (change)="getTempInF()">
+                </div>
+                <div class="col-md-6 mb-4">
+                    <label for="">Temp in fahrenheat</label>
+                    <input type="text" class="form-control" [(ngModel)]="tempInF" (change)="getTempInC()">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

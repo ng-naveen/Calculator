@@ -1,0 +1,18 @@
+<div class="container-fluid bg-dark" style="height: 100vh;">
+    <div class="row align-items-center" style="height: 100%;">
+        <div class="col-4"></div>
+        <div class="col-4 p-4 border">
+            <div class="text-center">
+                <h3 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: aliceblue;">
+                    Addition</h3>
+            </div>
+            <input type="text" placeholder="Enter a number" class="form-control rounded-pill" #inputBox1>
+            <input type="text" placeholder="Enter another number" class="form-control rounded-pill my-2" #inputBox2>
+            <div class="text-center">
+                <button (click)="performAddition(inputBox1, inputBox2)" class="btn btn-outline-light">Add</button>
+            </div>
+            <h4 style="color: aliceblue;">Result: {{result}}</h4>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
